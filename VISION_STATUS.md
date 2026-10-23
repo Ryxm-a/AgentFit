@@ -15,5 +15,5 @@ AgentFit 1.0 implements the complete *honest* version of the original product vi
 - Generated install scripts are review-only; AgentFit never silently executes third-party code.
 
 ## Verification
-- 109 automated tests covering legacy behavior, routing, malformed upstream data, official MCP lifecycle states, shell injection quoting, scoring bounds, and source failures.
+- 100+ automated cases covering legacy behavior, routing, malformed upstream data, official MCP lifecycle states, shell injection quoting, scoring bounds, and source failures.
 - All Python modules compile.
