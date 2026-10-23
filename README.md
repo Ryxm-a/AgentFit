@@ -174,7 +174,7 @@ python -m pip install -e ".[dev]"
 python -m pytest -q
 ```
 
-The 1.0.0 release ships with **109 automated cases** spanning extraction/routing, source contracts, malformed upstream responses, MCP lifecycle handling, ranking, deduplication and shell-injection regression coverage.
+The 1.0.0 release ships with **100+ automated cases** spanning extraction/routing, source contracts, malformed upstream responses, MCP lifecycle handling, ranking, deduplication and shell-injection regression coverage.
 
 CI runs the suite across Python 3.9–3.13 on every push and pull request.
 
