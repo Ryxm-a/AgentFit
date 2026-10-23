@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+agentfit_install.sh
+.env
+.DS_Store
+*.whl
+.coverage
+htmlcov/
