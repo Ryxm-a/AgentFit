@@ -1,0 +1,34 @@
+name: Bug report
+description: Report reproducible incorrect behavior in AgentFit
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping make AgentFit more reliable. Please do not report security vulnerabilities here; use SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: AgentFit version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: Task/query
+      description: What exact task did you give AgentFit?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
