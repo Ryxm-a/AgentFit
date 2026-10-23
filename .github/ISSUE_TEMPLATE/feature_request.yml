@@ -1,0 +1,23 @@
+name: Feature request
+description: Propose a capability, source adapter, ranking improvement or UX change
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / ecosystem source
+      description: For new integrations, link the stable API or machine-readable source you expect AgentFit to use.
