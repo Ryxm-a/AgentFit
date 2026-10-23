@@ -1,0 +1,14 @@
+[
+  {"id":"re-01","task":"reverse engineer WebAssembly in Ghidra","domain":"reverse-engineering"},
+  {"id":"sec-01","task":"audit a WordPress plugin for vulnerabilities","domain":"security"},
+  {"id":"dev-01","task":"MCP for GitHub issues and pull requests","domain":"developer-tools"},
+  {"id":"doc-01","task":"agent skill for creating PowerPoint presentations","domain":"documents"},
+  {"id":"mob-01","task":"port a C++ game to iOS with Xcode and Metal","domain":"mobile"},
+  {"id":"web-01","task":"build a React Native app with Supabase and Stripe","domain":"full-stack"},
+  {"id":"doc-02","task":"OCR scanned PDFs and extract structured data","domain":"documents"},
+  {"id":"ops-01","task":"debug Kubernetes workloads and inspect logs","domain":"devops"},
+  {"id":"ops-02","task":"manage AWS infrastructure with Terraform","domain":"devops"},
+  {"id":"sec-02","task":"static analysis for a TypeScript security review","domain":"security"},
+  {"id":"data-01","task":"work with PostgreSQL schema and queries","domain":"data"},
+  {"id":"agent-01","task":"browser automation and testing for an AI coding agent","domain":"agents"}
+]
