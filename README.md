@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/agentfit-hero.svg" alt="AgentFit — tell it the job, get the right stack" width="100%">
+
 # AgentFit
 
 ### Tell it the job. Get the smallest useful AI tool stack.
@@ -38,6 +40,16 @@ Normalize → score → deduplicate → optimize coverage
    ▼
 Smallest useful stack + evidence + compatibility + install plan
 ```
+
+## See it in one command
+
+```bash
+agentfit "MCP for GitHub issues and pull requests"
+```
+
+AgentFit extracts the requirements, searches live sources, scores the candidates, removes redundant choices and explains the selected stack. Results are intentionally live rather than hard-coded screenshots of yesterday's ecosystem.
+
+**Explore:** [real task examples](examples/README.md) · [AgentFitBench](benchmarks/README.md) · [Agent Skill](skills/agentfit/SKILL.md) · [launch kit](LAUNCH.md)
 
 ## Quick start
 
@@ -186,6 +198,20 @@ CI runs the suite across Python 3.9–3.13 on every push and pull request.
 4. **Do not invent integrations.** Unsupported APIs are called unsupported.
 5. **Installation is a trust boundary.** Generate for review; do not silently execute.
 6. **Keep sources replaceable.** Ecosystems change; source adapters should be swappable.
+
+## AgentFitBench
+
+A recommender should be measurable. [AgentFitBench](benchmarks/README.md) ships realistic cross-domain tasks and metrics for top-3 relevance, requirement coverage, redundancy, abandonment, compatibility precision and source resilience.
+
+We intentionally do **not** publish an accuracy percentage until the candidate judgments have human-reviewed ground truth.
+
+```bash
+python benchmarks/run.py
+```
+
+## Use AgentFit from another agent
+
+The repository includes a portable [`SKILL.md`](skills/agentfit/SKILL.md). Agents that support skill-style instructions can use AgentFit as their discovery layer while preserving the same rule as the CLI: recommendations are evidence, and third-party installation is never silently executed.
 
 ## Roadmap
 
