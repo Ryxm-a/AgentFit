@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentfit"
+version = "1.0.0"
+description = "npm for AI capabilities — recommends a ranked, deduplicated stack of MCP servers, skills, CLIs, and libraries for a given task."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "AgentFit contributors" }]
+dependencies = ["requests>=2.28"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+agentfit = "agentfit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["agentfit*"]
