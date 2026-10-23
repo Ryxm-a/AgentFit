@@ -1,0 +1,32 @@
+name: Build demo media
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/render_demo.py
+      - .github/workflows/demo-media.yml
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install renderer
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg espeak
+          python -m pip install Pillow
+      - name: Render AgentFit demo
+        run: python scripts/render_demo.py
+      - name: Commit generated media
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add media/agentfit-demo.mp4 media/agentfit-preview.gif media/agentfit-thumbnail.png
+          git diff --cached --quiet && exit 0
+          git commit -m "docs: render AgentFit product demo"
+          git push
